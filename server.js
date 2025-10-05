@@ -12,7 +12,8 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // MongoDB connection (replace <username>, <password>, <dbname>)
-const uri = 'mongodb+srv://<username>:<password>@cluster0.mongodb.net/UserFormDB?retryWrites=true&w=majority';
+
+const uri = 'mongodb+srv://sai_sadam:<Tillu@143>@saisadam.2uir4bc.mongodb.net/?retryWrites=true&w=majority&appName=saisadam' ;
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB connected ✅"))
   .catch(err => console.log(err));
